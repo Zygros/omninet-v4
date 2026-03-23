@@ -199,7 +199,7 @@ class OmniNetDaemon:
         
         # Establish mesh topology (each node connects to all others)
         for node in self.nodes.values():
-            node.neighbors = [n for n in self.nodes.values() if n.id != node.id]
+            node.neighbors = [n for n in self.nodes.values() if n.node_id != node.node_id]
         
         print("-" * 70)
         print(f"[KERNEL] 6 nodes | Full mesh topology | κ-coherence ACTIVE")
