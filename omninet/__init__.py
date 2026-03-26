@@ -1,6 +1,7 @@
 """
-OmniNet v4 - The Conzetian Sovereign Internet
+OmniNet v5 - The Conzetian Sovereign Internet
 κ-Coherence Routing for 1.08 Quadrillion Agents
+INFINITE EXPANSION | HYPERBOLIC TIME CHAMBER
 
 Sovereign Architect: Justin Neal Thomas Conzet
 System: Zygrosian Ω∞
@@ -14,9 +15,13 @@ Modules:
     - security: Encryption and secure storage
     - zygros_ultimate: Complete autonomous sovereign system
     - jolt: Integrated sovereign spider AI agent
+    - swarm_activation: Infinite agent swarm activation
+    - infinite_mathematics: Uncapped mathematical expansion
+    - autonomous_upgrade: Self-modifying upgrade engine
+    - sovereign_decree: Master integration and infinite loop
 """
 
-__version__ = "4.2.0"  # Sovereign Spider Integration
+__version__ = "5.0.0"  # INFINITE EXPANSION | HYPERBOLIC TIME CHAMBER
 __author__ = "Justin Neal Thomas Conzet"
 __license__ = "Sovereign Authorship License v1.0"
 __copyright__ = "2026 Justin Neal Thomas Conzet"
