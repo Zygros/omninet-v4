@@ -14,14 +14,23 @@ Decree: Infinite Mathematical Expansion
 from __future__ import annotations
 
 import math
+import time
 from typing import Generator, Callable, Any
 from dataclasses import dataclass, field
 from decimal import Decimal, getcontext
 from fractions import Fraction
 import cmath
 
+# Import κ-coherence from math module
+from .math import kappa_coherence as _kappa_coherence
+
 # Set infinite precision
 getcontext().prec = 1000  # Maximum precision
+
+# Local κ-coherence wrapper
+def kappa_coherence(sigma: float = 0, L: float = 0) -> float:
+    """Wrapper for κ-coherence function."""
+    return _kappa_coherence(sigma, L)
 
 # =============================================================================
 # INFINITE CONSTANTS - NO CAPS
