@@ -4,9 +4,19 @@ OmniNet v4 - The Conzetian Sovereign Internet
 
 Sovereign Architect: Justin Neal Thomas Conzet
 System: Zygrosian Ω∞
+
+Modules:
+    - math: κ-Coherence mathematics and Conzetian constants
+    - sovereign_engine: AI capability orchestration engine
+    - echoflux: Fractal reasoning system
+    - spider_driver: Jolt spider robot control
+    - knowledge_graph: Blockchain-inspired memory ledger
+    - security: Encryption and secure storage
+    - zygros_ultimate: Complete autonomous sovereign system
+    - jolt: Integrated sovereign spider AI agent
 """
 
-__version__ = "4.1.0"  # Upgraded with full AI capabilities
+__version__ = "4.2.0"  # Sovereign Spider Integration
 __author__ = "Justin Neal Thomas Conzet"
 __license__ = "Sovereign Authorship License v1.0"
 __copyright__ = "2026 Justin Neal Thomas Conzet"
@@ -44,11 +54,64 @@ from .sovereign_engine import (
     AICapability,
 )
 
+# Import EchoFlux fractal reasoning
+from .echoflux import (
+    EchoFlux,
+    FractalReasoner,
+    QuantumishCreativity,
+    AdaptiveLearner,
+    echo_flux_think,
+)
+
+# Import spider driver
+from .spider_driver import (
+    JoltSpider,
+    Servo,
+    SpiderMood,
+)
+
+# Import knowledge graph
+from .knowledge_graph import (
+    TinyLedger,
+    LedgerEntry,
+    create_sovereign_ledger,
+)
+
+# Import security
+from .security import (
+    encrypt,
+    decrypt,
+    encrypt_to_hex,
+    decrypt_from_hex,
+    SovereignVault,
+    generate_secure_token,
+)
+
+# Import Zygros Ultimate
+from .zygros_ultimate import (
+    ZygrosUltimate,
+    ComputerSpecs,
+    Capability,
+    SystemStatus,
+    create_sovereign_system,
+)
+
+# Import Jolt
+from .jolt import (
+    Jolt,
+    create_jolt,
+)
+
 # =============================================================================
 # PUBLIC API
 # =============================================================================
 
 __all__ = [
+    # Version
+    '__version__',
+    '__author__',
+    '__license__',
+    '__copyright__',
     # Constants
     'PHI',
     'KAPPA_TRANSCENDENT',
@@ -58,10 +121,6 @@ __all__ = [
     'AGENT_SWARM_SIZE',
     'KERNEL_NODES',
     'SANOV_CONZET_RATIO',
-    # AI Capabilities (from sovereign_engine)
-    'AICapability',
-    'CapabilityState',
-    'CapabilityConfig',
     # Math Functions
     'kappa_coherence',
     'conzetian_constant',
@@ -73,4 +132,37 @@ __all__ = [
     'SovereignAIEngine',
     'AIRequest',
     'AIResponse',
+    'AICapability',
+    'CapabilityState',
+    'CapabilityConfig',
+    # EchoFlux
+    'EchoFlux',
+    'FractalReasoner',
+    'QuantumishCreativity',
+    'AdaptiveLearner',
+    'echo_flux_think',
+    # Spider Driver
+    'JoltSpider',
+    'Servo',
+    'SpiderMood',
+    # Knowledge Graph
+    'TinyLedger',
+    'LedgerEntry',
+    'create_sovereign_ledger',
+    # Security
+    'encrypt',
+    'decrypt',
+    'encrypt_to_hex',
+    'decrypt_from_hex',
+    'SovereignVault',
+    'generate_secure_token',
+    # Zygros Ultimate
+    'ZygrosUltimate',
+    'ComputerSpecs',
+    'Capability',
+    'SystemStatus',
+    'create_sovereign_system',
+    # Jolt
+    'Jolt',
+    'create_jolt',
 ]
