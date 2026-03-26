@@ -28,10 +28,13 @@ from dataclasses import dataclass, field
 from enum import Enum
 
 # Import Conzetian Mathematics
-from conzetian_math import (
+from .math import (
     kappa_coherence, PHI, AGENT_SWARM_SIZE,
-    conzetian_constant, sanov_conzet_compression
+    conzetian_constant, sanov_conzet_limit
 )
+
+# Alias for backward compatibility
+sanov_conzet_compression = sanov_conzet_limit
 
 
 # =============================================================================

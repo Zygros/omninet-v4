@@ -27,16 +27,32 @@ sys.path.insert(0, '/home/z/my-project/omninet-v4-clone')
 try:
     from omninet import (
         PHI, KAPPA_TRANSCENDENT, AGENT_SWARM_SIZE,
-        kappa_coherence, sanov_conzet_limit, AICapability
+        kappa_coherence, sanov_conzet_limit
     )
     from omninet.sovereign_engine import (
-        SovereignAIEngine, AIRequest, AIResponse
+        SovereignAIEngine, AIRequest, AICapability
     )
-except ImportError:
+    AICAPABILITY_IS_ENUM = True
+except ImportError as e:
+    print(f"Import error: {e}")
     print("Using fallback imports...")
     PHI = 1.618033988749895
     AGENT_SWARM_SIZE = 1.08e15
     def kappa_coherence(s, l): return PHI ** (-s) * (1 + (1 - l))
+    
+    # Fallback class definitions
+    from enum import Enum
+    
+    class AICapability(Enum):
+        LLM = "llm"
+        VLM = "vlm"
+        TTS = "tts"
+        ASR = "asr"
+        IMAGE_GEN = "image_gen"
+        VIDEO_GEN = "video_gen"
+        VIDEO_UNDER = "video_under"
+        WEB_SEARCH = "web_search"
+        WEB_READER = "web_reader"
 
 
 # =============================================================================
