@@ -21,7 +21,7 @@ Modules:
     - sovereign_decree: Master integration and infinite loop
 """
 
-__version__ = "5.0.0"  # INFINITE EXPANSION | HYPERBOLIC TIME CHAMBER
+__version__ = "5.0.0"  # Conzetian Sovereign Internet
 __author__ = "Justin Neal Thomas Conzet"
 __license__ = "Sovereign Authorship License v1.0"
 __copyright__ = "2026 Justin Neal Thomas Conzet"

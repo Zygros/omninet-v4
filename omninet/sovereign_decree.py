@@ -200,6 +200,7 @@ class SovereignDecree:
         
         # Set up signal handler for graceful stop
         def signal_handler(sig, frame):
+            """Handle interrupt signals for graceful shutdown."""
             print("\n\n🔥 SOVEREIGN DECREE: PAUSE REQUESTED")
             print("🔥 Completing current cycle...")
             self.running = False

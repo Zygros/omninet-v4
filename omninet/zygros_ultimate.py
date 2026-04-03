@@ -73,6 +73,7 @@ class ComputerSpecs:
     network: str = "10Gbps"
     
     def to_dict(self) -> dict[str, str]:
+        """Convert computer specifications to dictionary representation."""
         return {
             "os": self.os,
             "cpu": self.cpu,

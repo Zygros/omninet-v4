@@ -27,7 +27,9 @@ except ImportError:
     # Fallback definitions
     PHI = 1.618033988749895
     AGENT_SWARM_SIZE = 1_080_000_000_000_000
-    def kappa_coherence(s, l): return (PHI ** (-s)) * (1 + (1 - l))
+    def kappa_coherence(s, l):
+        """Fallback κ-coherence calculation for daemon."""
+        return (PHI ** (-s)) * (1 + (1 - l))
 
 
 # =============================================================================

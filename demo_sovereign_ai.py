@@ -38,12 +38,15 @@ except ImportError as e:
     print("Using fallback imports...")
     PHI = 1.618033988749895
     AGENT_SWARM_SIZE = 1.08e15
-    def kappa_coherence(s, l): return PHI ** (-s) * (1 + (1 - l))
+    def kappa_coherence(s, l):
+        """Fallback κ-coherence calculation for demo purposes."""
+        return PHI ** (-s) * (1 + (1 - l))
     
     # Fallback class definitions
     from enum import Enum
     
     class AICapability(Enum):
+        """Fallback AICapability enum for demo purposes."""
         LLM = "llm"
         VLM = "vlm"
         TTS = "tts"
