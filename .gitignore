@@ -21,3 +21,7 @@ dist/
 
 # Logs
 *.log
+*.pyc
+.venv/
+.env.*
+.splus-runtime/
