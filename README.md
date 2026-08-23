@@ -34,6 +34,21 @@ OmniNet v4 is a research implementation exploring:
 
 The repository may contain a mixture of executable implementation, benchmarks, and architectural research. Current capability must be established from reproducible evidence rather than README claims alone.
 
+## Ω-9 Research Layer
+
+A new falsifiable research layer is provided in `omninet/research.py`, with deterministic tests in `tests/test_research.py` and the full experimental protocol in `docs/RESEARCH_PROTOCOL_OMEGA9.md`.
+
+It introduces:
+
+- a bounded multiplicative coherence metric;
+- resilience scoring under controlled failures;
+- descriptive candidate-vs-baseline effect sizes;
+- transparent confidence bounds;
+- logical-population capacity separated from physical node count;
+- a recovery-decay null model.
+
+These are **proposed research instruments**, not established scientific laws. The Ω-9 protocol requires baseline comparisons, fault injection, statistical analysis, raw artifacts, and reproducibility before strong empirical claims are made.
+
 ## Installation
 
 ```bash
@@ -75,6 +90,7 @@ python -m pytest tests/ -v
 | Module | Description |
 |---|---|
 | `math` | κ-Coherence mathematics and Conzetian constants |
+| `research` | Falsifiable coherence, resilience, scaling, and benchmark metrics |
 | `daemon` | Network daemon and recovery experiments |
 | `security` | Experimental encryption and secure-storage utilities |
 | `knowledge_graph` | Blockchain-inspired memory ledger |
@@ -86,6 +102,8 @@ python -m pytest tests/ -v
 ## Mathematical foundations
 
 The repository contains experimental mathematical models including the κ-Coherence field equation and Conzetian constant. These are documented as **research definitions**, not independently established scientific results, unless a corresponding reproducible validation artifact is provided.
+
+The Ω-9 research layer adds measurable definitions designed to support falsification and comparison rather than merely restating architectural claims.
 
 ## Testing and development
 
