@@ -25,10 +25,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-      - name: Install package and test dependencies
+      - name: Install package and focused test dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e .
-          python -m pip install pytest
-      - name: Run focused secure-cell tests
-        run: python -m pytest tests/test_secure_cell.py -q
+          python -m pip install -e . --no-deps
+          python -m pip install "cryptography>=35.0.0,<36.0.0" pytest
+      - name: Run focused secure-cell and replay tests
+        run: python -m pytest tests/test_secure_cell.py tests/test_replay_guard.py tests/test_package_version.py -q
