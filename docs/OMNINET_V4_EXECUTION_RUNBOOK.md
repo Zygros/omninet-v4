@@ -12,20 +12,24 @@ mesh or HTC-420 deployment is already running.
 - SQLite-backed monotonic replay guard scoped by sender and key identifier.
 - Focused tests for cell round trips, tampering, state mismatch, wrong keys, invalid
   inputs, replay rejection, persistence, and independent sender/key scopes.
+- Aligned PEP 440 package version declarations across Poetry, setuptools, and runtime.
 
 ## Local verification
 
 From the repository root:
 
 ```bash
-python -m pip install -e .
-python -m pip install pytest
-python -m pytest tests/test_secure_cell.py tests/test_replay_guard.py -q
+python -m pip install -e . --no-deps
+python -m pip install "cryptography>=35.0.0,<36.0.0" pytest
+python -m pytest tests/test_secure_cell.py tests/test_replay_guard.py tests/test_package_version.py -q
 python -m pytest tests/ -q
 ```
 
 The focused suite must pass before this increment is promoted. The full repository
-test suite remains a separate gate.
+test suite remains a separate gate. The focused CI install intentionally avoids
+installing every legacy application dependency; the existing pandas <2.0 constraint
+is not needed by the secure-cell slice and currently has no compatible wheel for
+the Python 3.12 matrix job.
 
 ## Security constraints
 
