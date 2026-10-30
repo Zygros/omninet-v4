@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "report_date": "2026-10-30",
+  "repository": "Zygros/omninet-v4",
+  "pull_request": 1,
+  "branch": "sovereign-execution/secure-cell-verification",
+  "verified_head": "a3badb9faea0ae2206b57a03803d7b368a44467b",
+  "base_branch": "main",
+  "changes": [
+    "Normalize PEP 440 version to 3.0.0+unity across Poetry, setuptools, and runtime",
+    "Declare Poetry package mapping for the omninet Python package",
+    "Add regression test for version metadata consistency",
+    "Use a focused --no-deps editable install and install only cryptography plus pytest",
+    "Run secure-cell, replay-guard, and version tests across Python 3.10, 3.11, and 3.12",
+    "Align runbook verification commands with the focused CI job"
+  ],
+  "source_blobs": {
+    "pyproject.toml": "b15c64edee2159e8a52b53544441663add670682",
+    "setup.py": "ad7937e36a1a668e3515a25828350cf61d089bed",
+    "omninet/__init__.py": "13739ff9c495a9eda866e17e3c1407696ce24359",
+    "tests/test_package_version.py": "3f66f13a2d32250db3f62cef060f5ea5e6868e5b",
+    ".github/workflows/secure-cell-tests.yml": "1bac5237eeeff954246de85da883e51b9a64415d",
+    "docs/OMNINET_V4_EXECUTION_RUNBOOK.md": "305b1d217a94499466e01a3368c97ab0a43a813b"
+  },
+  "verification": {
+    "focused_matrix": {
+      "pull_request_run": {
+        "id": 41113319963,
+        "conclusion": "success"
+      },
+      "push_run": {
+        "id": 41113315066,
+        "conclusion": "success"
+      },
+      "python_3_10": {
+        "passed": 14,
+        "failed": 0
+      },
+      "python_3_11": {
+        "passed": 14,
+        "failed": 0
+      },
+      "python_3_12": {
+        "passed": 14,
+        "failed": 0
+      }
+    },
+    "phoenix_audit": {
+      "pull_request_run": {
+        "id": 41113320040,
+        "conclusion": "success",
+        "python_tests_passed": 21
+      },
+      "push_run": {
+        "id": 41113315001,
+        "conclusion": "success",
+        "python_tests_passed": 21
+      }
+    },
+    "expected_pip_warning": "--no-deps intentionally leaves unrelated legacy application dependencies uninstalled in the focused test environment",
+    "full_repository_suite": "not claimed by focused workflow",
+    "production_deployment": false,
+    "live_tor_integration": false,
+    "multi_host_replay_test": false,
+    "external_anchoring": false
+  },
+  "evidence_classification": {
+    "packaging": "IMPLEMENTED",
+    "focused_matrix": "TESTED",
+    "phoenix_audit": "TESTED",
+    "production": "NOT_PERFORMED",
+    "external_anchor": "NOT_PERFORMED"
+  },
+  "pr_state_at_recording": "open_unmerged"
+}
