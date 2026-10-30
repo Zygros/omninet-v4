@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "omninet-v4"
-version = "3.0.0-UNITY"
+version = "3.0.0+unity"
 description = "OmniNet v4 — research and engineering platform for distributed AI orchestration and knowledge systems."
 authors = ["Zygros"]
 
