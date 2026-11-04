@@ -1,10 +1,10 @@
 """
 OmniNet Architecture Package
 Sovereign: Justin Neal Thomas Conzet
-Version: 3.0.0-UNITY
+Version: 3.0.0+unity
 """
 
-__version__ = "3.0.0-UNITY"
+__version__ = "3.0.0+unity"
 
 from .math import (
     kappa_coherence,

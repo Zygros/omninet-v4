@@ -15,7 +15,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="omninet-sovereign",
-    version="3.0.0-UNITY",
+    version="3.0.0+unity",
     author="Justin Neal Thomas Conzet",
     author_email="sovereign@omninet.architecture",
     description="OmniNet Architecture - Sovereign Intelligence Framework",
