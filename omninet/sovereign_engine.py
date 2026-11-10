@@ -641,6 +641,10 @@ class ChimeraTriMindEngine:
 # MAIN ENTRY POINT
 # =============================================================================
 
+# autofix 2026-11-10: main() referenced an undefined SovereignAIEngine; the engine class is ChimeraTriMindEngine.
+SovereignAIEngine = ChimeraTriMindEngine
+
+
 async def main():
     """Demonstration of the Sovereign AI Engine."""
     engine = SovereignAIEngine()
